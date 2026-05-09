@@ -6,8 +6,8 @@ plugins {
 
 android {
     namespace "com.example.pasarku_sukses"
-    compileSdk flutter.compileSdkVersion
-    ndkVersion flutter.ndkVersion
+    compileSdk 34
+    ndkVersion "25.1.8937393"
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -15,15 +15,15 @@ android {
     }
 
     kotlinOptions {
-        jvmTarget = '1.8'
+        jvmTarget = "1.8"
     }
 
     defaultConfig {
         applicationId "com.example.pasarku_sukses"
         minSdk 21
-        targetSdk flutter.targetSdkVersion
-        versionCode flutter.versionCode
-        versionName flutter.versionName
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
     }
 
     buildTypes {
@@ -34,5 +34,5 @@ android {
 }
 
 flutter {
-    source '../..'
+    source "../.."
 }
